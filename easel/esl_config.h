@@ -39,7 +39,7 @@
 #define HAVE_INTTYPES_H 1
 #define HAVE_SYS_TYPES_H 1
 #define HAVE_SYS_SYSCTL_H 1
-/* #undef HAVE_ENDIAN_H */
+#define HAVE_ENDIAN_H 1
 
 /* Types
  */

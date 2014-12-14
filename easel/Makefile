@@ -21,8 +21,8 @@ pdfdir      = ${docdir}
 
 # Compiler configuration
 #
-CC       = gcc
-CFLAGS   = -O3 -fomit-frame-pointer -fstrict-aliasing -mcpu=pentium2 
+CC       = gcc -std=gnu99
+CFLAGS   = -O3 -fomit-frame-pointer -malign-double -fstrict-aliasing -pthread
 LDFLAGS  = 
 SIMDFLAGS= -msse2
 CPPFLAGS = 

@@ -19,8 +19,8 @@ bindir      = ${exec_prefix}/bin
 
 ## your compiler and compiler flags.
 #
-CC        = gcc
-CFLAGS    = -O3 -fomit-frame-pointer -fstrict-aliasing -mcpu=pentium2
+CC        = gcc -std=gnu99
+CFLAGS    = -O3 -fomit-frame-pointer -malign-double -fstrict-aliasing
 LDFLAGS   = 
 SIMDFLAGS = -msse2
 DEFS      = -DHAVE_CONFIG_H

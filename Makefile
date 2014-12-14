@@ -43,8 +43,8 @@ manext      = .1
 
 # Compiler configuration
 #
-CC        = gcc
-CFLAGS    = -O3 -fomit-frame-pointer -fstrict-aliasing -mcpu=pentium2
+CC        = gcc -std=gnu99
+CFLAGS    = -O3 -fomit-frame-pointer -malign-double -fstrict-aliasing
 LDFLAGS   = -static 
 SIMDFLAGS = -msse2
 CPPFLAGS  = 

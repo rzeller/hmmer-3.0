@@ -7,13 +7,13 @@ top_srcdir = ..
 srcdir     = .
 VPATH      =  ..
 
-CC       = gcc
-CFLAGS   = -O3 -fomit-frame-pointer -fstrict-aliasing -mcpu=pentium2 
+CC       = gcc -std=gnu99
+CFLAGS   = -O3 -fomit-frame-pointer -malign-double -fstrict-aliasing -pthread
 SIMDFLAGS= -msse2
 CPPFLAGS = 
 LDFLAGS  = 
 DEFS     = -DHAVE_CONFIG_H
-LIBS     = -lhmmer -lhmmerimpl -leasel    -lm
+LIBS     = -Wl,--start-group -lhmmer -lhmmerimpl -Wl,--end-group -leasel    -lm
 
 AR       = /usr/bin/ar rcv 
 RANLIB   = ranlib
